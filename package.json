@@ -1,6 +1,6 @@
 {
   "name": "react-code39-barcode",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "",
   "main": "dist/index.es.js",
   "files": [
@@ -22,9 +22,12 @@
     "url": "https://github.com/Dforrunner/react-code39-barcode"
   },
   "homepage": "https://github.com/Dforrunner/react-code39-barcode#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dforrunner/react-code39-barcode.git"
+  },
   "devDependencies": {
     "@babel/core": "^7.24.7",
-    "@babel/preset-env": "^7.24.7",
     "@babel/preset-react": "^7.24.7",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-node-resolve": "^15.2.3",

@@ -1,25 +1,14 @@
 # React Code39 Barcode
 
-This is a lightweight React component that allows you to render Code39 barcodes as SVG. It is designed to be used on the client or server side, making it ideal for generating a large number of Code39 barcodes.
-
-## Supported Code
-
-- CODE39
-
-## Example
-![alt text](image.png)
+This is a lightweight React component that allows you to render Code39 barcodes as SVGs. It is designed to be used on the client or server side, making it ideal for generating a large number of Code39 barcodes.
 
 ## Installation
-
-To install the React Code39 Barcode component, simply run the following command:
 
 ```
 npm install react-code39-barcode
 ```
 
 ## Usage
-
-To use the React Code39 Barcode component, import it into your project and pass the desired barcode value as a prop. Here's an example:
 
 ```jsx
 import React from 'react';
@@ -28,7 +17,6 @@ import { Barcode39Svg } from 'react-code39-barcode';
 const App = () => {
   return (
     <div>
-      <h1>Code39 Barcode Example</h1>
       <Barcode39Svg value='123456789' />
     </div>
   );
@@ -36,6 +24,9 @@ const App = () => {
 
 export default App;
 ```
+
+## Output
+![Code39 Barcode Example](image.png)
 
 ## Props
 
@@ -53,20 +44,6 @@ export default App;
 | lineSpacing | number  | 10          | The spacing between the display text and the barcode.                         |
 | className   | string  | ""          | Any valid css class that will be applied to the barcode container             |
 | id          | string  | ""          | HTML id for the barcode container                                             |
-
-The table above lists the props that can be passed to the `Barcode39Svg` component. Each prop has a corresponding type, default value, and description.
-
-Please note that the `value` prop is required and must be a string representing the value to be encoded as a Code39 barcode. The other props are optional and have default values specified in the table.
-
-Feel free to modify these props according to your requirements.
-
-## Performance
-
-This library was specifically created to address the performance issues found in other Code39 barcode generation libraries. By being lightweight and optimized for server-side usage, it ensures fast and efficient barcode rendering.
-
-## Contributing
-
-Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/your-repo-link).
 
 ## License
 
