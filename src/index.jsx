@@ -1,3 +1,5 @@
+/// <reference path="../types/index.d.ts" />
+
 import React from 'react';
 import { generateCode39Barcode } from './code39SvgGen';
 
