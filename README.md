@@ -2,6 +2,8 @@
 
 This is a lightweight React component that allows you to render Code39 barcodes as SVGs. It is designed to be used on the client or server side, making it ideal for generating a large number of Code39 barcodes.
 
+## [DEMO](https://code39-barcode-demo.vercel.app/)
+
 ## Installation
 
 ```
