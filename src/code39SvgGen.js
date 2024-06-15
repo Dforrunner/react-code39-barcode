@@ -61,6 +61,8 @@ export function generateCode39Barcode(
   const encodedData = startStop + value.toUpperCase() + startStop;
   let barcodePattern = '';
 
+  if (encodedData.length > 43) throw new Error('Data too long for Code39 barcode');
+
   // Build the barcode pattern
   for (let char of encodedData) {
     if (code39Encoding[char]) {
@@ -99,7 +101,9 @@ export function generateCode39Barcode(
   if (!textColor) textColor = color;
 
   const valueDisplay = showValue
-    ? `<div style="font: ${fontSize}px ${fontFamily}; text-align:center; width: ${x}px; color: ${textColor}; line-height: ${lineSpacing}px; font-weight: ${fontWeight}" >${value.toUpperCase()}</div>`
+    ? `<div style="font: ${fontSize}px ${fontFamily}; text-align:center; width: ${x}px; color: ${textColor}; ${
+        lineSpacing ? 'line-height:' + lineSpacing + 'px' : ''
+      }; font-weight: ${fontWeight}" >${value.toUpperCase()}</div>`
     : '';
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${x}" version="1.1" height="${height}"><g style="fill:${color};">${svgContent}</g></svg>${valueDisplay}`;
   return svg;

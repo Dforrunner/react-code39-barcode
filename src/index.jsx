@@ -14,7 +14,7 @@ export function Barcode39Svg({
   padding = 10,
   color = 'black',
   textColor = '',
-  lineSpacing = 10,
+  lineSpacing,
   className = '',
   id = '',
 }) {

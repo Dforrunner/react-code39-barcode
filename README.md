@@ -26,6 +26,7 @@ export default App;
 ```
 
 ## Output
+
 ![Code39 Barcode Example](image.png)
 
 ## Props
@@ -41,9 +42,9 @@ export default App;
 | color       | string  | "black"     | The color of the barcode.                                                     |
 | textColor   | string  | "black"     | The color of the text displayed below the barcode if different from the color |
 | showText    | boolean | true        | Whether to display the text below the barcode.                                |
-| lineSpacing | number  | 10          | The spacing between the display text and the barcode.                         |
-| className   | string  | ""          | Any valid css class that will be applied to the barcode container             |
-| id          | string  | ""          | HTML id for the barcode container                                             |
+| lineSpacing | number  | -           | The spacing between the display text and the barcode.                         |
+| className   | string  | -           | Any valid css class that will be applied to the barcode container             |
+| id          | string  | -           | HTML id for the barcode container                                             |
 
 ## License
 
