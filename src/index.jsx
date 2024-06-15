@@ -1,3 +1,4 @@
+import React from 'react';
 import { generateCode39Barcode } from './code39SvgGen';
 
 export function Barcode39Svg({
@@ -15,6 +16,7 @@ export function Barcode39Svg({
   className = '',
   id = '',
 }) {
+  if (!value) throw new Error('Barcode39Svg: value prop is required');
   return (
     <div
       id={id}
