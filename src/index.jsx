@@ -17,13 +17,14 @@ export function Barcode39Svg({
   lineSpacing,
   className = '',
   id = '',
+  style = {},
 }) {
   if (!value) throw new Error('Barcode39Svg: value prop is required');
   return (
     <div
       id={id}
       className={className}
-      style={{ padding }}
+      style={{ ...style, padding }}
       dangerouslySetInnerHTML={{
         __html: generateCode39Barcode(
           value,

@@ -1,6 +1,6 @@
 {
   "name": "react-code39-barcode",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "",
   "main": "dist/index.es.js",
   "types": "types/index.d.ts",

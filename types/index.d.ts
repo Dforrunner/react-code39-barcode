@@ -12,6 +12,7 @@ declare function Barcode39Svg(props: {
   lineSpacing?: number;
   className?: string;
   id?: string;
+  style?: React.CSSProperties;
 }): JSX.Element;
 
 export { Barcode39Svg };
